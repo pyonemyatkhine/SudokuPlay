@@ -98,24 +98,7 @@ namespace SudokuPlay
                         txtList[i, j].IsEnabled = false;
 
                         resultValues[i, j] = value;
-
-                        int areaRow = -1;
-                        int areaColumn = -1;
-                        if (i >= 0 && i <= 2)
-                            areaRow = 0;
-                        else if (i >= 3 && i <= 5)
-                            areaRow = 1;
-                        else
-                            areaRow = 2;
-
-                        if (j >= 0 && j <= 2)
-                            areaColumn = 0;
-                        else if (j >= 3 && j <= 5)
-                            areaColumn = 1;
-                        else
-                            areaColumn = 2;
-
-
+                        
                         txtList[i, j].Background = Brushes.AliceBlue;
                     }
                 }
@@ -168,6 +151,5 @@ namespace SudokuPlay
                 }
             }
         }
-        
     }
 }
